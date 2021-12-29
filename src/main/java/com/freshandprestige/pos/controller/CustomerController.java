@@ -1,4 +1,4 @@
-package com.freshandprestige.pos;
+package com.freshandprestige.pos.controller;
 
 import com.freshandprestige.pos.model.Customer;
 import com.freshandprestige.pos.service.CustomerService;
