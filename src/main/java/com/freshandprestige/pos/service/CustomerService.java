@@ -1,5 +1,6 @@
 package com.freshandprestige.pos.service;
 
+import java.util.ArrayList;
 import java.util.List;
 import java.util.UUID;
 
@@ -33,11 +34,11 @@ public class CustomerService {
 	}
 
 	public Customer findCustomerById(Long id){
-		return customerRepo.findCustomerById(id).orElseThrow(() ->
+		return customerRepo.findById(id).orElseThrow(() ->
 				new UserNotFoundException("User by id " + id + "was not found"));
 	}
 
 	public void deleteCustomer(Long id){
-		customerRepo.deleteCustomerById(id);
+		customerRepo.deleteById(id);
 	}
 }
